@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace BlazorApp.Negocio
 {
-
     public static class ExpressoesRegulares
     {
         /// <summary>
@@ -57,5 +56,4 @@ namespace BlazorApp.Negocio
         /// </summary>
         public const string numeroReal = @"^\d+?(.|,\d+)$";
     }
-
 }
