@@ -8,12 +8,19 @@ namespace BlazorApp.Data
 {
     public class Contexto : DbContext
     {
+        #region Construtores
+
         /// <summary>
         /// Construtor
         /// </summary>
         /// <param name="opcoes"></param>
         public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes) { }
 
-        //public DbSet<Curso>
+        #endregion
+
+        /// <summary>
+        /// Conexão com a tabela Pessoa
+        /// </summary>
+        public DbSet<Pessoas> Pessoas { get; set; }
     }
 }
